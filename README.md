@@ -29,6 +29,18 @@ Install certbot for nginx on fresh ubuntu 18.04.
 $ sudo ./certbot_nginx_ubuntu18.04.sh
 ```
 
+### node_using_nvm_ubuntu18.04.sh
+Install node using nvm on Ubuntu 18.04
+```sh
+$ sudo ./node_using_nvm_ubuntu18.04.sh
+```
+
+### node_ubuntu18.04.sh
+Install node on Ubuntu 18.04
+```sh
+$ sudo ./node_ubuntu18.04.sh
+```
+
 
    [gitextract.sh]: <https://github.com/technoknol/commandopedia/blob/master/gitextract.sh>
    

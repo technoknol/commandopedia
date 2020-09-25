@@ -1,5 +1,6 @@
 #!/bin/sh
 sudo add-apt-repository -y ppa:certbot/certbot
+sudo apt-get update
 sudo apt install -y python-certbot-apache
 
 # Obtain Certificate command

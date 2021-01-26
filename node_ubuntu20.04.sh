@@ -8,4 +8,4 @@ node -v
 echo 'npm -v'
 npm -v
 sudo apt install build-essential -y
-
+sudo npm install pm2 -g 

@@ -9,3 +9,4 @@ sudo a2enmod prody_http
 sudo a2enmod ssl
 sudo a2enmod proxy_balancer
 sudo a2enmod proxy_wstunnel
+sudo systemctl restart apache2

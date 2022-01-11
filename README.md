@@ -41,6 +41,17 @@ Install node on Ubuntu 18.04
 $ sudo ./node_ubuntu18.04.sh
 ```
 
+ 
+
+ 
+## Get git commits list by author with date
+
+```sh
+git log --pretty=format:"%h - %an, %ad : %s" --author="Shyam Makwana" > commits.txt 
+```
+
+_Source: https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History_
+
 
    [gitextract.sh]: <https://github.com/technoknol/commandopedia/blob/master/gitextract.sh>
    

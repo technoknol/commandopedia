@@ -52,6 +52,14 @@ git log --pretty=format:"%h - %an, %ad : %s" --author="Shyam Makwana" > commits.
 
 _Source: https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History_
 
+## MongoDb dump and restore 
+
+```sh
+mongodump --archive="dtm_backup" --db=dtm 
+mongorestore --archive="dtm_backup" --nsFrom="dtm.*" --nsTo="dtmdev.*"
+```
+
+
 
    [gitextract.sh]: <https://github.com/technoknol/commandopedia/blob/master/gitextract.sh>
    

@@ -78,3 +78,17 @@ chmod +x get-ssm-frankfurt.sh
 ```
 ./get-ssm-frankfurt.sh
 ```
+
+# 5. Upload to S3. 
+
+Step 1: Choose Your S3 Bucket (Create if needed)
+```
+S3_BUCKET="my-ssm-backups-frankfurt"
+```
+
+```
+S3_BUCKET="my-ssm-backups-frankfurt" && \
+LATEST=$(ls -t ssm-parameters-export-*.txt | head -1) && \
+aws s3 cp "$LATEST" s3://$S3_BUCKET/ssm-backups/ && \
+echo "Uploaded: s3://$$ S3_BUCKET/ssm-backups/ $$(basename $LATEST)"
+```
